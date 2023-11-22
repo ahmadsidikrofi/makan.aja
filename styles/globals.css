@@ -1834,6 +1834,12 @@ textarea.form-control {
 .navbarContainer {
   /* background-color: #b7babe; */
 }
+@media screen and (max-width: 480px) {
+  .navbarContainer {
+    display: none;
+    visibility: none;
+  }
+}
 .ulNavbar {
   display: flex;
   gap: 30;
