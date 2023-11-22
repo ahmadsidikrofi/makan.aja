@@ -35,42 +35,42 @@ const CustomerOwlCarousel = () => {
         <>
             <OwlCarousel options={options}>
                 <div className={styles.items}>
-                    <p>&ldquo;Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.&rdquo;</p>
+                    <p>&ldquo;Empanada adalah roti isi atau pastri panggang atau goreng di banyak negara di Amerika Latin, Eropa Selatan, dan bagian dari Asia Tenggara.&rdquo;</p>
                     <div className={styles.author}>
                         <Image src="/image/person_2.jpg" className="mb-3" style={{ borderRadius: '50%', width: 80, height: 80, margin: '0 auto' }} width={100} height={100} alt="Image placeholder" />
-                        <h4>Geert Green</h4>
+                        <h4>Ataya Tidur</h4>
                         <p>CEO, Founder</p>
                     </div>
                 </div>
                 <div className={styles.items}>
-                    <p>&ldquo;Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.&rdquo;</p>
+                    <p>&ldquo;Empanada adalah roti isi atau pastri panggang atau goreng di banyak negara di Amerika Latin, Eropa Selatan, dan bagian dari Asia Tenggara.&rdquo;</p>
                     <div className={styles.author}>
                         <Image src="/image/person_2.jpg" className="mb-3" style={{ borderRadius: '50%', width: 80, height: 80, margin: '0 auto' }} width={100} height={100} alt="Image placeholder" />
-                        <h4>Geert Green</h4>
+                        <h4>Maura Ngantuk</h4>
                         <p>CEO, Founder</p>
                     </div>
                 </div>
                 <div className={styles.items}>
-                    <p>&ldquo;Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.&rdquo;</p>
+                    <p>&ldquo;Empanada adalah roti isi atau pastri panggang atau goreng di banyak negara di Amerika Latin, Eropa Selatan, dan bagian dari Asia Tenggara.&rdquo;</p>
                     <div className={styles.author}>
                         <Image src="/image/person_2.jpg" className="mb-3" style={{ borderRadius: '50%', width: 80, height: 80, margin: '0 auto' }} width={100} height={100} alt="Image placeholder" />
-                        <h4>Geert Green</h4>
+                        <h4>Ataya Tidur</h4>
                         <p>CEO, Founder</p>
                     </div>
                 </div>
                 <div className={styles.items}>
-                    <p>&ldquo;Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.&rdquo;</p>
+                    <p>&ldquo;Empanada adalah roti isi atau pastri panggang atau goreng di banyak negara di Amerika Latin, Eropa Selatan, dan bagian dari Asia Tenggara.&rdquo;</p>
                     <div className={styles.author}>
                         <Image src="/image/person_2.jpg" className="mb-3" style={{ borderRadius: '50%', width: 80, height: 80, margin: '0 auto' }} width={100} height={100} alt="Image placeholder" />
-                        <h4>Geert Green</h4>
+                        <h4>Maura Ngantuk</h4>
                         <p>CEO, Founder</p>
                     </div>
                 </div>
                 <div className={styles.items}>
-                    <p>&ldquo;Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.&rdquo;</p>
+                    <p>&ldquo;Empanada adalah roti isi atau pastri panggang atau goreng di banyak negara di Amerika Latin, Eropa Selatan, dan bagian dari Asia Tenggara.&rdquo;</p>
                     <div className={styles.author}>
                         <Image src="/image/person_2.jpg" className="mb-3" style={{ borderRadius: '50%', width: 80, height: 80, margin: '0 auto' }} width={100} height={100} alt="Image placeholder" />
-                        <h4>Geert Green</h4>
+                        <h4>Ataya Tidur</h4>
                         <p>CEO, Founder</p>
                     </div>
                 </div>

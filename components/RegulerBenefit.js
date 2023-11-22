@@ -8,7 +8,7 @@ const RegulerBenefit = () => {
                     <div className="row section-heading justify-content-center mb-5">
                         <div className="col-md-8 text-center">
                             <h2 className="heading mb-3">Other Services</h2>
-                            {/* <p className="sub-heading mb-5">Free Website Template For Restaurants Made by <a href="#">Free-Template.co</a></p> */}
+                            <p className="sub-heading mb-5">Beberapa layanan lain yang tidak dapat kamu temukan dari sumber diet manapun check</p>
                         </div>
                     </div>
                     <div className="row">
@@ -19,7 +19,7 @@ const RegulerBenefit = () => {
                                 </div>
                                 <div className="media-body">
                                     <h3>Quality Cuisine</h3>
-                                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                                    <p>Empanada adalah roti isi atau pastri panggang atau goreng di banyak negara di Amerika Latin, Eropa Selatan, dan bagian dari Asia Tenggara.</p>
                                 </div>
                             </div>
                         </div>
@@ -30,7 +30,7 @@ const RegulerBenefit = () => {
                                 </div>
                                 <div className="media-body">
                                     <h3>Fresh Food</h3>
-                                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                                    <p>Empanada adalah roti isi atau pastri panggang atau goreng di banyak negara di Amerika Latin, Eropa Selatan, dan bagian dari Asia Tenggara.</p>
                                 </div>
                             </div>
                         </div>
@@ -41,7 +41,7 @@ const RegulerBenefit = () => {
                                 </div>
                                 <div className="media-body">
                                     <h3>Bread &amp; Pancake</h3>
-                                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                                    <p>Empanada adalah roti isi atau pastri panggang atau goreng di banyak negara di Amerika Latin, Eropa Selatan, dan bagian dari Asia Tenggara.</p>
                                 </div>
                             </div>
                         </div>
@@ -52,7 +52,7 @@ const RegulerBenefit = () => {
                                 </div>
                                 <div className="media-body">
                                     <h3>Reserve Now</h3>
-                                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                                    <p>Empanada adalah roti isi atau pastri panggang atau goreng di banyak negara di Amerika Latin, Eropa Selatan, dan bagian dari Asia Tenggara.</p>
                                 </div>
                             </div>
                         </div>
@@ -64,7 +64,7 @@ const RegulerBenefit = () => {
                                 </div>
                                 <div className="media-body">
                                     <h3>Fresh Vegies Salad</h3>
-                                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                                    <p>Empanada adalah roti isi atau pastri panggang atau goreng di banyak negara di Amerika Latin, Eropa Selatan, dan bagian dari Asia Tenggara.</p>
                                 </div>
                             </div>
                         </div>
@@ -75,7 +75,7 @@ const RegulerBenefit = () => {
                                 </div>
                                 <div className="media-body">
                                     <h3>Whole Chicken</h3>
-                                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                                    <p>Empanada adalah roti isi atau pastri panggang atau goreng di banyak negara di Amerika Latin, Eropa Selatan, dan bagian dari Asia Tenggara.</p>
                                 </div>
                             </div>
                         </div>

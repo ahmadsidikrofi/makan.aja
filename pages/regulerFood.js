@@ -48,8 +48,7 @@ const RegulerFood = () => {
                                 <div className="row align-items-center justify-content-center text-center">
                                     <div className="col-md-10" data-aos="fade-up">
                                         <h2 className="heading mb-5">Makan.aja</h2>
-                                        <p className="sub-heading mb-5">Makan apapun tetap sehat
-                                        Turun bb sambil makan enak</p>
+                                        <p className="sub-heading mb-5">Makan apapun tetap sehat. <br />Turun bb sambil makan enak.</p>
                                         <div className="d-flex justify-content-center gap-5">
                                             <motion.p style={{ fontFamily: 'quicksand' }}
                                                 initial={{ y: 100, opacity: 0 }}

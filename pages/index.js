@@ -44,7 +44,7 @@ export default function Home() {
                 <div className="row align-items-center justify-content-center text-center">
                   <div className="col-md-10" data-aos="fade-up">
                     <h2 className="heading mb-5">Makan.aja</h2>
-                    <p className="sub-heading mb-5">Makan apapun tetap sehat</p>
+                    <p className="sub-heading mb-5">Makan apapun tetap sehat. <br />Turun bb sambil makan enak.</p>
                     <div className="d-flex justify-content-center gap-5">
                       <motion.p style={{ fontFamily: 'quicksand' }}
                         initial={{ y: 100, opacity: 0 }}
@@ -84,7 +84,7 @@ export default function Home() {
             <div className="container">
               <div className="row section-heading justify-content-center mb-5">
                 <div className="col-md-8 text-center">
-                  <h2 className="heading mb-3">Find your best food</h2>
+                  <h2 className="heading mb-3">Dapatkan makanan terenakmu</h2>
                   {/* <p className="sub-heading mb-5">Free Website Template For Restaurants Made by <a href="#">Free-Template.co</a></p> */}
                 </div>
               </div>
@@ -96,7 +96,7 @@ export default function Home() {
                     <div className="ftco-46-text ftco-46-arrow-left">
                       <h4 className="ftco-46-subheading">Vegies</h4>
                       <h3 className="ftco-46-heading">Beef Empanadas</h3>
-                      <p className="mb-5">Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+                      <p className="mb-5">Empanada adalah roti isi atau pastri panggang atau goreng di banyak negara di Amerika Latin, Eropa Selatan, dan bagian dari Asia Tenggara. Namanya berasal dari kata kerja empanar, yang berarti bungkus atau mantel dalam roti.</p>
                       <p><a href="#" className="btn-link">Learn More <span className="ion-android-arrow-forward"></span></a></p>
                     </div>
                     <div className="ftco-46-image" style={{ backgroundImage: `url(/image/img_2.jpg)` }}></div>
@@ -106,14 +106,14 @@ export default function Home() {
                     <div className="ftco-46-text ftco-46-arrow-right">
                       <h4 className="ftco-46-subheading">Food</h4>
                       <h3 className="ftco-46-heading">Buttermilk Chicken Jibaritos</h3>
-                      <p className="mb-5">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                      <p className="mb-5">Empanada adalah roti isi atau pastri panggang atau goreng di banyak negara di Amerika Latin, Eropa Selatan, dan bagian dari Asia Tenggara. Namanya berasal dari kata kerja empanar, yang berarti bungkus atau mantel dalam roti.</p>
                       <p><a href="#" className="btn-link">Learn More <span className="ion-android-arrow-forward"></span></a></p>
                     </div>
                     <div className="ftco-46-image" style={{ backgroundImage: `url(/image/img_3.jpg)` }}></div>
                     <div className="ftco-46-text ftco-46-arrow-up">
                       <h4 className="ftco-46-subheading">Food</h4>
                       <h3 className="ftco-46-heading">Chicken Chimichurri Croquettes</h3>
-                      <p className="mb-5">Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life.</p>
+                      <p className="mb-5">Empanada adalah roti isi atau pastri panggang atau goreng di banyak negara di Amerika Latin, Eropa Selatan, dan bagian dari Asia Tenggara. Namanya berasal dari kata kerja empanar, yang berarti bungkus atau mantel dalam roti.</p>
                       <p><a href="#" className="btn-link">Learn More <span className="ion-android-arrow-forward"></span></a></p>
                     </div>
                   </div>

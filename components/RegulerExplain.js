@@ -8,8 +8,8 @@ const RegulerExplain = () => {
                     <div class="row align-items-center justify-content-center">
                         <div class="col-md-12 col-lg-8 section-heading">
                             <h2 class="heading mb-5">Reguler Food</h2>
-                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-                            <p>It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                            <p>Program Food and Beverage Product merupakan program pelatihan bagi kandidat yang memiliki ketertarikan pada pengolahan dan penyajian makanan dan minuman.</p>
+                            <p>Pelatihan ini bertujuan meningkatkan kemampuan dan pengetahuan akan penanganan makanan secara benar, dimulai dari penanganan bahan baku sampai nanti.</p>
                         </div>
                     </div>
                 </div>
