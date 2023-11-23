@@ -110,7 +110,7 @@ export default function Home() {
                             duration: 0.3,
                           }
                         }}
-                      ><a href="/dietFood" className="smoothscroll btn btn-outline-white px-5 py-3"> Diet Menu</a>
+                      ><Link href="/dietFood" className="smoothscroll btn btn-outline-white px-5 py-3"> Diet Menu</Link>
                       </motion.p>
                     </div>
                   </div>
