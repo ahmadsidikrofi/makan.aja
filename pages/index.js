@@ -1,39 +1,59 @@
-
+'use client';
 import Link from 'next/link'
-import styles from '@/styles/Home.module.css'
-import { useState, useEffect } from "react";
-import { motion } from "framer-motion";
+import { useState, useEffect, useRef, HTMLDivElement } from "react";
+import { motion, useScroll, useTransform   } from "framer-motion";
 import MainModal from '@/components/MainModal';
 
 export default function Home() {
   const [scrolled, setScrolled] = useState(false);
   const [isModal, setIsModal] = useState(false);
+  const ref = useRef<HTMLDivElement>(null);
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["0 1", "1 1"]
+  });
+  const scaleProgress = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
+  const opacityProgress = useTransform(scrollYProgress, [0.4, 1], [1, 1]);
 
   const handleScroll = () => {
-      const isScrolled = window.scrollY > 10;
-      setScrolled(isScrolled);
+    const isScrolled = window.scrollY > 10;
+    setScrolled(isScrolled);
   };
-  useEffect(() => {
-      window.addEventListener('scroll', handleScroll);
 
-      // Bersihkan event listener saat komponen di-unmount
-      return () => {
-          window.removeEventListener('scroll', handleScroll);
-      };
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    // Bersihkan event listener saat komponen di-unmount
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
   }, []);
   const headerClass = scrolled ? 'site-header scrolled' : 'site-header';
 
   const handleModalOpen = () => {
     MainModal({ setIsModal });
   }
+
+
   return (
     <>
       <header className={headerClass}>
-        <div className="row d-flex align-items-center justify-content-center">
+        <motion.div className="row d-flex align-items-center justify-content-center"
+          initial={{ y: -100, opacity: 0 }}
+          animate={{ y: 0, opacity: 1, }}
+          transition={{ 
+            duration: .8,
+            type: 'spring',
+            stiffness: 150,
+           }}
+          whileHover={{
+            scale: 1.2,
+            textShadow: "0px 0px 8px white",
+          }}
+        >
           <div className="col-2 col-md-6 text-center site-logo-wrap">
-            <a className="site-logo" onClick={handleModalOpen}>M</a>
+            <a className="site-logo" onClick={handleModalOpen} >M</a>
           </div>
-        </div>
+        </motion.div>
       </header>
       {isModal && <MainModal setIsModal={setIsModal} />}
       <div className="site-wrap">
@@ -42,9 +62,27 @@ export default function Home() {
             <div className="img_bg" style={{ backgroundImage: `url('/image/slider-2.png')` }} data-stellar-background-ratio="0.5">
               <div className="container">
                 <div className="row align-items-center justify-content-center text-center">
-                  <div className="col-md-10" data-aos="fade-up">
-                    <h2 className="heading mb-5">Makan.aja</h2>
-                    <p className="sub-heading mb-5">Makan apapun tetap sehat. <br />Turun bb sambil makan enak.</p>
+                  <div className="col-md-10">
+                    <motion.h2 className="heading mb-5"
+                      initial={{ x: 300, opacity: 0 }}
+                      animate={{ x: 0, opacity: 1 }}
+                      transition={{ 
+                        duration: 0.8,
+                        type: 'spring',
+                        stiffness: 100,
+                        delay: 1
+                      }}
+                    >Makan.aja</motion.h2>
+                    <motion.p className="sub-heading mb-5"
+                      initial={{ x: -300, opacity: 0 }}
+                      animate={{ x: 0, opacity: 1 }}
+                      transition={{
+                        duration: 0.5,
+                        type: 'spring',
+                        stiffness: 100,
+                        delay: 1.6
+                      }}
+                    >Makan apapun tetap sehat. <br />Turun bb sambil makan enak.</motion.p>
                     <div className="d-flex justify-content-center gap-5">
                       <motion.p style={{ fontFamily: 'quicksand' }}
                         initial={{ y: 100, opacity: 0 }}
@@ -72,7 +110,7 @@ export default function Home() {
                             duration: 0.3,
                           }
                         }}
-                      ><a href="#section-reservation" className="smoothscroll btn btn-outline-white px-5 py-3"> Diet Menu</a>
+                      ><a href="/dietFood" className="smoothscroll btn btn-outline-white px-5 py-3"> Diet Menu</a>
                       </motion.p>
                     </div>
                   </div>
@@ -80,11 +118,14 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="section" data-aos="fade-up">
+          <motion.div className="section" 
+            // ref={ref}
+            style={{ scale: scaleProgress, opacity: opacityProgress }}
+          >
             <div className="container">
               <div className="row section-heading justify-content-center mb-5">
                 <div className="col-md-8 text-center">
-                  <h2 className="heading mb-3">Dapatkan makanan terenakmu</h2>
+                  <motion.h2 className="heading mb-3">Dapatkan makanan terenakmu</motion.h2>
                   {/* <p className="sub-heading mb-5">Free Website Template For Restaurants Made by <a href="#">Free-Template.co</a></p> */}
                 </div>
               </div>
@@ -121,7 +162,7 @@ export default function Home() {
 
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </>

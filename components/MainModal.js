@@ -10,7 +10,7 @@ const MainModal = (onConfirm, onCancel, setIsModal) => {
         childrenElement: () => (
             <div>
                 <Link href="/regulerFood" className="btn-sm mt-3 btn btn-dark p-2 mx-1"> Standard Menu</Link>
-                <Link href="#" className="btn-sm mt-3 btn btn-dark p-2 mx-1"> Diet Menu</Link>
+                <Link href="/dietFood" className="btn-sm mt-3 btn btn-dark p-2 mx-1"> Diet Menu</Link>
             </div>
         ),
         confirmLabel: 'Standard Menu',

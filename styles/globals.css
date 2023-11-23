@@ -1834,7 +1834,7 @@ textarea.form-control {
 .navbarContainer {
   /* background-color: #b7babe; */
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1024px) {
   .navbarContainer {
     display: none;
     visibility: none;

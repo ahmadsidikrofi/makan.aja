@@ -1,17 +1,17 @@
+'use client';
 import Link from "next/link";
-import { useState, useEffect } from "react";
-import { useRouter } from 'next/router';
-import { motion } from "framer-motion";
+import { useState, useEffect, useRef } from "react";
+import { motion, useScroll, useTransform } from "framer-motion";
 import Modal from "@/components/Modal";
-import RegulerExplain from "@/components/RegulerExplain";
-import RegulerMenu from "@/components/RegulerMenu";
-import RegulerBenefit from "@/components/RegulerBenefit";
+import RegulerExplain from "@/components/RegulerFood/RegulerExplain";
+import RegulerMenu from "@/components/RegulerFood/RegulerMenu";
+import RegulerBenefit from "@/components/RegulerFood/RegulerBenefit";
 import CustomerReviews from "@/components/CustomerReviews";
 
 const RegulerFood = () => {
     const [scrolled, setScrolled] = useState(false);
     const [isModal, setIsModal] = useState(false);
-
+    
     const handleScroll = () => {
         const isScrolled = window.scrollY > 10;
         setScrolled(isScrolled);
@@ -33,11 +33,23 @@ const RegulerFood = () => {
     return (
         <>
             <header className={headerClass}>
-                <div className="row d-flex align-items-center justify-content-center">
+                <motion.div className="row d-flex align-items-center justify-content-center"
+                    initial={{ y: -100, opacity: 0 }}
+                    animate={{ y: 0, opacity: 1, }}
+                    transition={{
+                        duration: .8,
+                        type: 'spring',
+                        stiffness: 150,
+                    }}
+                    whileHover={{
+                        scale: 1.2,
+                        textShadow: "0px 0px 8px white",
+                    }}
+                >
                     <div className="col-2 col-md-6 text-center site-logo-wrap">
-                        <a className="site-logo" onClick={handleModalOpen}>M</a>
+                        <a className="site-logo" onClick={handleModalOpen} >M</a>
                     </div>
-                </div>
+                </motion.div>
             </header>
             {isModal && <Modal setIsModal={setIsModal} />}
             <div className="site-wrap">
@@ -46,9 +58,27 @@ const RegulerFood = () => {
                         <div className="img_bg" style={{ backgroundImage: `url('/image/slider-2.png')` }} data-stellar-background-ratio="0.5">
                             <div className="container">
                                 <div className="row align-items-center justify-content-center text-center">
-                                    <div className="col-md-10" data-aos="fade-up">
-                                        <h2 className="heading mb-5">Makan.aja</h2>
-                                        <p className="sub-heading mb-5">Makan apapun tetap sehat. <br />Turun bb sambil makan enak.</p>
+                                    <div className="col-md-10">
+                                        <motion.h2 className="heading mb-5"
+                                            initial={{ x: 300, opacity: 0 }}
+                                            animate={{ x: 0, opacity: 1 }}
+                                            transition={{
+                                                duration: 0.8,
+                                                type: 'spring',
+                                                stiffness: 100,
+                                                delay: 1
+                                            }}
+                                        >Makan.aja</motion.h2>
+                                        <motion.p className="sub-heading mb-5"
+                                            initial={{ x: -300, opacity: 0 }}
+                                            animate={{ x: 0, opacity: 1 }}
+                                            transition={{
+                                                duration: 0.5,
+                                                type: 'spring',
+                                                stiffness: 100,
+                                                delay: 1.6
+                                            }}
+                                        >Makan apapun tetap sehat. <br />Turun bb sambil makan enak.</motion.p>
                                         <div className="d-flex justify-content-center gap-5">
                                             <motion.p style={{ fontFamily: 'quicksand' }}
                                                 initial={{ y: 100, opacity: 0 }}
@@ -62,7 +92,7 @@ const RegulerFood = () => {
                                                         duration: 0.3,
                                                     }
                                                 }}
-                                            ><a href="#section-reservation" className="smoothscroll btn btn-outline-white px-5 py-3"> Standard Menu</a>
+                                            ><Link href="/regulerFood" className="smoothscroll btn btn-outline-white px-5 py-3"> Standard Menu</Link>
                                             </motion.p>
                                             <motion.p style={{ fontFamily: 'quicksand' }}
                                                 initial={{ y: 100, opacity: 0 }}
@@ -76,7 +106,7 @@ const RegulerFood = () => {
                                                         duration: 0.3,
                                                     }
                                                 }}
-                                            ><a href="#section-reservation" className="smoothscroll btn btn-outline-white px-5 py-3"> Diet Menu</a>
+                                            ><Link href="/dietFood" className="smoothscroll btn btn-outline-white px-5 py-3"> Diet Menu</Link>
                                             </motion.p>
                                         </div>
                                     </div>

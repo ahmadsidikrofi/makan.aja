@@ -11,29 +11,34 @@ import { useEffect } from "react";
 const OwlCarousel = dynamic(() => import("react-owl-carousel"), { ssr: false })
 
 const CustomerOwlCarousel = () => {
+    const Responsive = {
+        0: {
+            items: 1.5,
+            margin: 5
+        },
+        768: {
+            items: 2.5,
+            margin: 10
+        },
+        1024: {
+            items: 3.5,
+            margin: 20
+        }
+    }
     const options = {
         loop: true,
         items: 1,
-        dots: false,
+        dots: true,
         autoplay: true,
         responsive: {
             0: {
-                items: 1,
-                margin: 5
+                items: 1
             },
-            768: {
-                items: 2,
-                margin: 10
-            },
-            1024: {
-                items: 3,
-                margin: 20
-            }
         }
     };
     return (
         <>
-            <OwlCarousel options={options}>
+            <OwlCarousel {...options}>
                 <div className={styles.items}>
                     <p>&ldquo;Empanada adalah roti isi atau pastri panggang atau goreng di banyak negara di Amerika Latin, Eropa Selatan, dan bagian dari Asia Tenggara.&rdquo;</p>
                     <div className={styles.author}>
@@ -74,18 +79,6 @@ const CustomerOwlCarousel = () => {
                         <p>CEO, Founder</p>
                     </div>
                 </div>
-                {/* <div className={styles.items}>
-                                <h1>2</h1>
-                            </div>
-                            <div className={styles.items}>
-                                <h1>3</h1>
-                            </div>
-                            <div className={styles.items}>
-                                <h1>4</h1>
-                            </div>
-                            <div className={styles.items}>
-                                <h1>5</h1>
-                            </div> */}
             </OwlCarousel>
         </>
     );
