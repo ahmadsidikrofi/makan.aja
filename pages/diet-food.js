@@ -3,11 +3,10 @@ import Link from "next/link";
 import { useState, useEffect, useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import Modal from "@/components/Modal";
-import RegulerExplain from "@/components/RegulerFood/RegulerExplain";
-import RegulerMenu from "@/components/RegulerFood/RegulerMenu";
-import RegulerBenefit from "@/components/RegulerFood/RegulerBenefit";
 import CustomerReviews from "@/components/CustomerReviews";
 import DietExplain from "@/components/DietFood/DietExplain";
+import DietMenu from "@/components/DietFood/DietMenu";
+import DietBenefit from "@/components/DietFood/DietBenefit";
 
 const DietFood = () => {
     const [scrolled, setScrolled] = useState(false);
@@ -19,7 +18,6 @@ const DietFood = () => {
     };
     useEffect(() => {
         window.addEventListener('scroll', handleScroll);
-
         // Bersihkan event listener saat komponen di-unmount
         return () => {
             window.removeEventListener('scroll', handleScroll);
@@ -56,7 +54,7 @@ const DietFood = () => {
         <div className="site-wrap">
             <div className="main-wrap" id="section-home">
                 <div className="cover_1 bg-slant-white bg-light">
-                    <div className="img_bg" style={{ backgroundImage: `url('/image/slider-2.png')` }} data-stellar-background-ratio="0.5">
+                    <div className="img_bg" style={{ backgroundImage: `url('/image/bgImage.jpg')` }} data-stellar-background-ratio="0.5">
                         <div className="container">
                             <div className="row align-items-center justify-content-center text-center">
                                 <div className="col-md-10">
@@ -120,8 +118,10 @@ const DietFood = () => {
                 <DietExplain />
 
                 {/* Diet Menu */}
+                <DietMenu />
 
                 {/* Diet Benefit */}
+                <DietBenefit />
 
                 {/* Customer Reviews */}
                 <CustomerReviews />

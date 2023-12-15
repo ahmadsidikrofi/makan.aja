@@ -7,6 +7,8 @@ import RegulerExplain from "@/components/RegulerFood/RegulerExplain";
 import RegulerMenu from "@/components/RegulerFood/RegulerMenu";
 import RegulerBenefit from "@/components/RegulerFood/RegulerBenefit";
 import CustomerReviews from "@/components/CustomerReviews";
+import { Icon } from '@iconify/react';
+import CarouselImg from "@/components/CarouselImg";
 
 const RegulerFood = () => {
     const [scrolled, setScrolled] = useState(false);
@@ -59,7 +61,7 @@ const RegulerFood = () => {
                             <div className="container">
                                 <div className="row align-items-center justify-content-center text-center">
                                     <div className="col-md-10">
-                                        <motion.h2 className="heading mb-5"
+                                        <motion.h2 className="heading mb-5 d-flex align-items-center justify-content-center"
                                             initial={{ x: 300, opacity: 0 }}
                                             animate={{ x: 0, opacity: 1 }}
                                             transition={{
@@ -68,7 +70,7 @@ const RegulerFood = () => {
                                                 stiffness: 100,
                                                 delay: 1
                                             }}
-                                        >Makan.aja</motion.h2>
+                                        >Makan <i className='mt-3'><Icon icon="ic:round-food-bank" width="30" height="30" color='#fb493d' /></i>aja</motion.h2>
                                         <motion.p className="sub-heading mb-5"
                                             initial={{ x: -300, opacity: 0 }}
                                             animate={{ x: 0, opacity: 1 }}
@@ -78,7 +80,7 @@ const RegulerFood = () => {
                                                 stiffness: 100,
                                                 delay: 1.6
                                             }}
-                                        >Makan apapun tetap sehat. <br />Turun bb sambil makan enak.</motion.p>
+                                        >Mau sehat? <strong style={{ fontFamily: "Playfair Display, serif" }}>Makan</strong><Icon icon="ic:round-food-bank" width="15" height="15" color='#fb493d' /> aja. <br />Turun bb sambil makan enak.</motion.p>
                                         <div className="d-flex justify-content-center gap-5">
                                             <motion.p style={{ fontFamily: 'quicksand' }}
                                                 initial={{ y: 100, opacity: 0 }}
@@ -106,7 +108,7 @@ const RegulerFood = () => {
                                                         duration: 0.3,
                                                     }
                                                 }}
-                                            ><Link href="/dietFood" className="smoothscroll btn btn-outline-white px-5 py-3"> Diet Menu</Link>
+                                            ><Link href="/diet-food" className="smoothscroll btn btn-outline-white px-5 py-3"> Diet Menu</Link>
                                             </motion.p>
                                         </div>
                                     </div>
@@ -114,6 +116,9 @@ const RegulerFood = () => {
                             </div>
                         </div>
                     </div>
+
+                    {/* Carousel */}
+                    <CarouselImg />
 
                     {/* Reguler Explain */}
                     <RegulerExplain />

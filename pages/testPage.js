@@ -3,9 +3,8 @@ import Link from 'next/link'
 import { useState, useEffect, useRef, HTMLDivElement } from "react";
 import { motion, useScroll, useTransform   } from "framer-motion";
 import MainModal from '@/components/MainModal';
-import { Icon } from '@iconify/react';
 
-export default function Home() {
+export default function TestPage() {
   const [scrolled, setScrolled] = useState(false);
   const [isModal, setIsModal] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
@@ -37,7 +36,7 @@ export default function Home() {
 
   return (
     <>
-      <header className={headerClass}>
+      <header className={headerClass} >
         <motion.div className="row d-flex align-items-center justify-content-center"
           initial={{ y: -100, opacity: 0 }}
           animate={{ y: 0, opacity: 1, }}
@@ -57,14 +56,14 @@ export default function Home() {
         </motion.div>
       </header>
       {isModal && <MainModal setIsModal={setIsModal} />}
-      <div className="site-wrap">
+      <div className="site-wrap" style={{ backgroundColor: '#FFBF25', borderRadius: "25 25 25 25" }}>
         <div className="main-wrap" id="section-home">
           <div className="cover_1 bg-slant-white bg-light">
             <div className="img_bg" style={{ backgroundImage: `url('/image/slider-2.png')` }} data-stellar-background-ratio="0.5">
               <div className="container">
                 <div className="row align-items-center justify-content-center text-center">
                   <div className="col-md-10">
-                    <motion.h2 className="heading mb-5 d-flex align-items-center justify-content-center"
+                    <motion.h2 className="heading mb-5"
                       initial={{ x: 300, opacity: 0 }}
                       animate={{ x: 0, opacity: 1 }}
                       transition={{ 
@@ -73,7 +72,7 @@ export default function Home() {
                         stiffness: 100,
                         delay: 1
                       }}
-                    >Makan <i className='mt-3'><Icon icon="ic:round-food-bank" width="30" height="30" color='#fb493d' /></i></motion.h2>
+                    >Makan.aja</motion.h2>
                     <motion.p className="sub-heading mb-5"
                       initial={{ x: -300, opacity: 0 }}
                       animate={{ x: 0, opacity: 1 }}
@@ -83,7 +82,7 @@ export default function Home() {
                         stiffness: 100,
                         delay: 1.6
                       }}
-                    >Mau sehat? Makan <Icon icon="ic:round-food-bank" width="15" height="15" color='#fb493d' /> aja. <br />Turun bb sambil makan enak.</motion.p>
+                    >Makan apapun tetap sehat. <br />Turun bb sambil makan enak.</motion.p>
                     <div className="d-flex justify-content-center gap-5">
                       <motion.p style={{ fontFamily: 'quicksand' }}
                         initial={{ y: 100, opacity: 0 }}
@@ -97,7 +96,7 @@ export default function Home() {
                             duration: 0.3,
                           }
                         }}
-                      ><Link href="/regulerFood" className="smoothscroll btn btn-outline-white px-5 py-3"> Reguler Food</Link>
+                      ><Link href="/regulerFood" className="smoothscroll btn btn-outline-white px-5 py-3"> Standard Menu</Link>
                       </motion.p>
                       <motion.p style={{ fontFamily: 'quicksand' }}
                         initial={{ y: 100, opacity: 0 }}
@@ -111,7 +110,7 @@ export default function Home() {
                             duration: 0.3,
                           }
                         }}
-                      ><Link href="/diet-food" className="smoothscroll btn btn-outline-white px-5 py-3"> Diet Food</Link>
+                      ><Link href="/dietFood" className="smoothscroll btn btn-outline-white px-5 py-3"> Diet Menu</Link>
                       </motion.p>
                     </div>
                   </div>
@@ -119,14 +118,14 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <motion.div className="" 
+          <motion.div className="section" 
             // ref={ref}
-            style={{ scale: scaleProgress, opacity: opacityProgress,  background: "#ffbf25" }}
+            style={{ scale: scaleProgress, opacity: opacityProgress }}
           >
             <div className="container">
               <div className="row section-heading justify-content-center mb-5">
                 <div className="col-md-8 text-center">
-                  <motion.h2 className="heading mb-3 mt-5">Dapatkan makanan terenakmu</motion.h2>
+                  <motion.h2 className="heading mb-3">Dapatkan makanan terenakmu</motion.h2>
                   {/* <p className="sub-heading mb-5">Free Website Template For Restaurants Made by <a href="#">Free-Template.co</a></p> */}
                 </div>
               </div>

@@ -4,7 +4,7 @@ import CustomerOwlCarousel from "./CustomerOwlCarousel";
 const CustomerReviews = () => {
     return (
         <>
-            <div className="section bg-white" data-aos="fade-up" id="other-services">
+            <div className="section" data-aos="fade-up" id="other-services" style={{ background: "#5BD2BC" }}>
                 <div className="container mx-auto">
                     <div className="row section-heading justify-content-center mb-5">
                         <div className="col-md-12 text-center">

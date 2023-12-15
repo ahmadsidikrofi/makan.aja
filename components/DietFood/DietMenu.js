@@ -4,7 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 
-const RegulerMenu = () => {
+const DietMenu = () => {
     const [activeTab, setActiveTab] = useState("breakfast");
 
     const menuHoverVariants = {
@@ -237,4 +237,4 @@ const RegulerMenu = () => {
     );
 }
 
-export default RegulerMenu;
+export default DietMenu;

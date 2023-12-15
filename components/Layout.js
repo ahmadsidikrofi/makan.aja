@@ -5,7 +5,9 @@ const Layout = ({children}) => {
     const pathname = usePathname();
     return ( 
         <div>
-            {pathname === "/" ? "" : <Header />}
+            {pathname === "/" || pathname === "/auth/login"  || pathname === "/contact" || pathname === "/harga-paket"
+            
+            ? "" : <Header />}
             {children}
         </div>
     );
