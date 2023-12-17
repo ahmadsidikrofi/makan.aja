@@ -1,11 +1,13 @@
 import Jumbotron from "@/components/Jumbotron";
 import Image from "next/image";
 import { Quicksand } from 'next/font/google'
+import MenuHeader from "@/components/MenuHeader";
 const quicksand = Quicksand({ subsets: ['latin'] })
 
 const Contact = () => {
     return ( 
         <>
+            <MenuHeader />
             <Jumbotron />
             <div className="container mt-5">
                 <div className="row">

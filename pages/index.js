@@ -4,6 +4,7 @@ import { useState, useEffect, useRef, HTMLDivElement } from "react";
 import { motion, useScroll, useTransform   } from "framer-motion";
 import MainModal from '@/components/MainModal';
 import { Icon } from '@iconify/react';
+import WhatsupPop from '@/components/WhatsupPop';
 
 export default function Home() {
   const [scrolled, setScrolled] = useState(false);
@@ -37,6 +38,7 @@ export default function Home() {
 
   return (
     <>
+      <WhatsupPop />
       <header className={headerClass}>
         <motion.div className="row d-flex align-items-center justify-content-center"
           initial={{ y: -100, opacity: 0 }}
