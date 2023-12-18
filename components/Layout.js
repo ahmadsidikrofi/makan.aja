@@ -1,5 +1,6 @@
 import { usePathname } from "next/navigation";
 import Header from "./Header";
+import { FloatingWhatsApp } from "react-floating-whatsapp";
 
 const Layout = ({children}) => {
     const pathname = usePathname();
@@ -7,7 +8,10 @@ const Layout = ({children}) => {
         <div>
             {pathname === "/" || pathname === "/auth/login"  || pathname === "/contact" || pathname === "/harga-paket"
             
-            ? "" : <Header />}
+            ? "" : 
+            <Header />
+            }
+            <FloatingWhatsApp />
             {children}
         </div>
     );

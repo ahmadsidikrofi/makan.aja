@@ -40,11 +40,11 @@ const DietMenu = () => {
                     >
                         <div className="text order-1 mb-3">
                             <Image width={100} height={100} src="/image/img_1.jpg" alt="Free Website Template for Restaurants by Free-Template.co" />
-                            <h3><a href="#">Warm Spinach Dip &amp; Chips</a></h3>
-                            <p>Spinach and artichokes in a creamy cheese dip with warm tortilla chips &amp; salsa.</p>
+                            <h3><a href="#">Vegan Tteobokki (Korean Spicy Rice Cake)</a></h3>
+                            <p>Nikmati Vegan Tteokbokki dalam 15 menit! Hanya dengan 6 bahan yang mudah ditemukan di toko Asia terdekat atau online di Amazon. Rasa Pedas, manis, kenyal, dan sangat mudah!.</p>
                         </div>
                         <div className="price order-2">
-                            <strong>$10.49</strong>
+                            <strong>Rp34.800</strong>
                         </div>
                     </motion.div>
 
@@ -54,11 +54,11 @@ const DietMenu = () => {
                     >
                         <div className="text order-1 mb-3">
                             <Image width={100} height={100} src="/image/img_2.jpg" alt="Free Website Template for Restaurants by Free-Template.co" />
-                            <h3><a href="#">Key Wast Machos</a></h3>
-                            <p>Crisp tortilla and plantain chips covered with lightly spiced ground beef, melted cheese, pickled jalapeños, guacamole, sour cream and salsa.</p>
+                            <h3><a href="#">Asiatique Dory with Hainanese Red Rice + FREE Crispy Broccoli</a></h3>
+                            <p>Rasakan cita rasa istimewa Asiatique Dory disajikan dengan Hainanese Red Rice, dan dapatkan bonus Crispy Broccoli yang renyah secara GRATIS!.</p>
                         </div>
                         <div className="price order-2">
-                            <strong>$11.99</strong>
+                            <strong>Rp39.900</strong>
                         </div>
                     </motion.div>
 
@@ -68,11 +68,11 @@ const DietMenu = () => {
                     >
                         <div className="text order-1 mb-3">
                             <Image width={100} height={100} src="/image/img_3.jpg" alt="Free Website Template for Restaurants by Free-Template.co" />
-                            <h3><a href="#">Crispy Onions Rings</a></h3>
-                            <p>A heaping mountain of rings, handmade with Panko breading and shredded coconut flakes.</p>
+                            <h3><a href="#">Ginger Chicken Ramen Kuroda + FREE Korean Mayak Egg</a></h3>
+                            <p>Nikmati kelezatan Ginger Chicken Ramen Kuroda dan dapatkan bonus Korean Mayak Egg yang lezat secara GRATIS!.</p>
                         </div>
                         <div className="price order-2">
-                            <strong>$11.99</strong>
+                            <strong>Rp29.500</strong>
                         </div>
                     </motion.div>
 
@@ -82,11 +82,11 @@ const DietMenu = () => {
                     >
                         <div className="text order-1 mb-3">
                             <Image width={100} height={100} src="/image/img_1.jpg" alt="Free Website Template for Restaurants by Free-Template.co" />
-                            <h3><a href="#">Lobster &amp; Shrimp Quesadilla</a></h3>
-                            <p>Lobster and tender shrimp, with onions, sweet peppers, spinach and our three cheese blend. Griddled and served with tomato salsa and sour cream.</p>
+                            <h3><a href="#">Japanese Truffle Chicken Katsu Sando + FREE Salad</a></h3>
+                            <p>Santaplah Japanese Truffle Chicken Katsu Sando yang lezat ini, Rasakan harmoni cita rasa yang memanjakan lidah dalam setiap gigitan!</p>
                         </div>
                         <div className="price order-2">
-                            <strong>$13.99</strong>
+                            <strong>Rp36.700</strong>
                         </div>
                     </motion.div>
                 </div>
@@ -98,11 +98,11 @@ const DietMenu = () => {
                     <div className="d-block d-md-flex menu-food-item">
                         <div className="text order-1 mb-3">
                             <Image width={100} height={100} src="/image/img_2.jpg" alt="Free Website Template for Restaurants by Free-Template.co" />
-                            <h3><a href="#">Jumbo Lump Crab Stack</a></h3>
-                            <p>Spinach and artichokes in a creamy cheese dip with warm tortilla chips &amp; salsa.</p>
+                            <h3><a href="#">Kungpao Chicken with Hainanese Red Rice</a></h3>
+                            <p>Nikmati cita rasa mirip Kung Pao Chicken ala restoran Tiongkok. Resep ini menggunakan ayam lembut melalui cara velveting (teknik perendaman).</p>
                         </div>
                         <div className="price order-2">
-                            <strong>$12.49</strong>
+                            <strong>Rp47.300</strong>
                         </div>
                     </div>
 

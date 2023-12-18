@@ -8,8 +8,8 @@ const RegulerExplain = () => {
                     <div className="row align-items-center justify-content-center">
                         <div className="col-md-12 col-lg-8 section-heading">
                             <h2 className="heading mb-5">Reguler Food</h2>
-                            <p >Program Food and Beverage Product merupakan program pelatihan bagi kandidat yang memiliki ketertarikan pada pengolahan dan penyajian makanan dan minuman.</p>
-                            <p>Pelatihan ini bertujuan meningkatkan kemampuan dan pengetahuan akan penanganan makanan secara benar, dimulai dari penanganan bahan baku sampai nanti.</p>
+                            <p>Program Food and Beverage Product adalah kesempatan emas bagi para kandidat yang bersemangat dalam seni pembuatan dan <i>penyajian</i> makanan serta minuman.</p>
+                            <p>Pelatihan ini bertujuan meningkatkan kemampuan dan pengetahuan akan penanganan makanan secara benar, dimulai dari penanganan bahan baku hingga akhir penyajian.</p>
                         </div>
                     </div>
                 </div>

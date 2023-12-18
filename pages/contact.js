@@ -2,9 +2,21 @@ import Jumbotron from "@/components/Jumbotron";
 import Image from "next/image";
 import { Quicksand } from 'next/font/google'
 import MenuHeader from "@/components/MenuHeader";
+import { motion } from "framer-motion";
 const quicksand = Quicksand({ subsets: ['latin'] })
 
 const Contact = () => {
+    const hoverVariants={
+        hover: {
+            scale: 1.1,
+            textShadow: "0px 0px 8px white",
+            transition: {
+                repeat: Infinity,
+                repeatType: "reverse",
+                duration: 1,
+            }
+        }
+    }
     return ( 
         <>
             <MenuHeader />
@@ -20,7 +32,12 @@ const Contact = () => {
                         <div className={`text-center ${quicksand.className}`}>
                             <h1 className="fw-bold">BATCH 50</h1>
                             <p className="mt-4">18 December 2023 - 24 December 2023</p>
-                            <p className={`p-3 bg-danger fw-bold rounded-5 text-white shadow-lg ${quicksand.className}`}>Monday, 18 December 2023</p>
+                            <motion.p
+                                variants={hoverVariants}
+                                whileHover={hoverVariants.hover}
+                                className={`p-3 bg-danger fw-bold rounded-5 text-white shadow-lg ${quicksand.className}`}>
+                                Monday, 18 December 2023
+                            </motion.p>
                         </div>
                         <div className={`${quicksand.className} mx-3 mt-4`}>
                             <p className="fw-bold text-primary">Lunch:</p>
@@ -30,8 +47,10 @@ const Contact = () => {
                         </div>
 
                         <div className="text-center mt-5">
-                            <p className={`p-3 bg-danger fw-bold rounded-5 text-white shadow-lg ${quicksand.className}`}
-                            >Tuesday, 19 December 2023</p>
+                            <motion.p 
+                                variants={hoverVariants}
+                                whileHover={hoverVariants.hover}
+                                className={`p-3 bg-danger fw-bold rounded-5 text-white shadow-lg ${quicksand.className}`}>Tuesday, 19 December 2023</motion.p>
                         </div>
                         <div className={`${quicksand.className} mx-3 mt-4`}>
                             <p className="fw-bold text-primary">Lunch:</p>
@@ -41,8 +60,11 @@ const Contact = () => {
                         </div>
 
                         <div className="text-center mt-5">
-                            <p className={`p-3 bg-danger fw-bold rounded-5 text-white shadow-lg ${quicksand.className}`}
-                            >Wednesday, 20 December 2023</p>
+                            <motion.p 
+                                variants={hoverVariants}
+                                whileHover={hoverVariants.hover}
+                                className={`p-3 bg-danger fw-bold rounded-5 text-white shadow-lg ${quicksand.className}`}
+                            >Wednesday, 20 December 2023</motion.p>
                         </div>
                         <div className={`${quicksand.className} mx-3 mt-4`}>
                             <p className="fw-bold text-primary">Lunch:</p>
@@ -52,8 +74,11 @@ const Contact = () => {
                         </div>
 
                         <div className="text-center mt-5">
-                            <p className={`p-3 bg-danger fw-bold rounded-5 text-white shadow-lg ${quicksand.className}`}
-                            >Thursday, 21 December 2023</p>
+                            <motion.p 
+                                variants={hoverVariants}
+                                whileHover={hoverVariants.hover}
+                                className={`p-3 bg-danger fw-bold rounded-5 text-white shadow-lg ${quicksand.className}`}
+                            >Thursday, 21 December 2023</motion.p>
                         </div>
                         <div className={`${quicksand.className} mx-3 mt-4`}>
                             <p className="fw-bold text-primary">Lunch:</p>
@@ -62,8 +87,11 @@ const Contact = () => {
                             <p>Indian Chicken Curry with Roti Canai + FREE Corn Salsa Salad</p>
                         </div>
                         <div className="text-center mt-5">
-                            <p className={`p-3 bg-danger fw-bold rounded-5 text-white shadow-lg ${quicksand.className}`}
-                            >Friday, 22 December 2023</p>
+                            <motion.p 
+                                variants={hoverVariants}
+                                whileHover={hoverVariants.hover}
+                                className={`p-3 bg-danger fw-bold rounded-5 text-white shadow-lg ${quicksand.className}`}
+                            >Friday, 22 December 2023</motion.p>
                         </div>
                         <div className={`${quicksand.className} mx-3 mt-4`}>
                             <p className="fw-bold text-primary">Lunch:</p>
@@ -73,8 +101,11 @@ const Contact = () => {
                         </div>
 
                         <div className="text-center mt-5">
-                            <p className={`p-3 bg-danger fw-bold rounded-5 text-white shadow-lg ${quicksand.className}`}
-                            >Saturday, 23 December 2023</p>
+                            <motion.p 
+                                variants={hoverVariants}
+                                whileHover={hoverVariants.hover}
+                                className={`p-3 bg-danger fw-bold rounded-5 text-white shadow-lg ${quicksand.className}`}
+                            >Saturday, 23 December 2023</motion.p>
                         </div>
                         <div className={`${quicksand.className} mx-3 mt-4`}>
                             <p className="fw-bold text-primary">Lunch:</p>
@@ -84,8 +115,11 @@ const Contact = () => {
                         </div>
 
                         <div className="text-center mt-5">
-                            <p className={`p-3 bg-danger fw-bold rounded-5 text-white shadow-lg ${quicksand.className}`}
-                            >Sunday, 24 December 2023</p>
+                            <motion.p 
+                                variants={hoverVariants}
+                                whileHover={hoverVariants.hover}
+                                className={`p-3 bg-danger fw-bold rounded-5 text-white shadow-lg ${quicksand.className}`}
+                            >Sunday, 24 December 2023</motion.p>
                         </div>
                         <div className={`${quicksand.className} mx-3 mt-4`}>
                             <p className="fw-bold text-primary">Lunch:</p>
