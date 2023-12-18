@@ -21,7 +21,7 @@ export default function CarouselPrice() {
                             <Image src="https://source.unsplash.com/random/600x650/?fruit" width={600} height={650} className="d-block w-100" alt="..."/>
                         </div>
                         <div className="carousel-item active">
-                            <Image src="https://source.unsplash.com/random/600x650/?food" width={600} height={650} className="d-block w-100" alt="..." />
+                            <Image src="https://source.unsplash.com/random/600x650/?salad" width={600} height={650} className="d-block w-100" alt="..." />
                         </div>
                     </div>
                     <button className="carousel-control-prev" type="button" data-bs-target="#carouselKiri" data-bs-slide="prev">
@@ -45,13 +45,13 @@ export default function CarouselPrice() {
                     </div>
                     <div className="carousel-inner rounded-5">
                         <div className="carousel-item active ">
-                            <Image src="https://source.unsplash.com/random/600x650/?food" width={600} height={650} className="d-block w-100" alt="..." />
+                            <Image src="https://source.unsplash.com/random/600x650/?salad" width={600} height={650} className="d-block w-100" alt="..." />
                         </div>
                         <div className="carousel-item active">
-                            <Image src="https://source.unsplash.com/random/600x650/?fruit" width={600} height={650} className="d-block w-100" alt="..."/>
+                            <Image src="https://source.unsplash.com/random/600x650/?food" width={600} height={650} className="d-block w-100" alt="..."/>
                         </div>
                         <div className="carousel-item active">
-                            <Image src="https://source.unsplash.com/random/600x650/?food" width={600} height={650} className="d-block w-100" alt="..." />
+                            <Image src="https://source.unsplash.com/random/600x650/?breakfast" width={600} height={650} className="d-block w-100" alt="..." />
                         </div>
                     </div>
                     <button className="carousel-control-prev" type="button" data-bs-target="#carouselKanan" data-bs-slide="prev">

@@ -24,9 +24,19 @@ const Contact = () => {
             <div className="container mt-5">
                 <div className="row">
                     <div className="col mb-5">
-                        <Image className="rounded-5 mb-5" src={"/image/makan.jpg"} width={500} height={690} alt="Gambar makanan"/>
-                        <Image className="rounded-5 mb-5" src={"/image/makan2.png"} width={500} height={690} alt="Gambar makanan"/>
-                        <Image className="rounded-5" src={"/image/makan3.jpg"} width={500} height={690} alt="Gambar makanan"/>
+                        <motion.div 
+                            whileHover={{ 
+                                scale: 1.08,
+                            }}
+                        >
+                            <Image className="rounded-5 mb-5" src={"/image/makan2.png"} width={500} height={690} alt="Gambar makanan"/>
+                        </motion.div>
+                        <motion.div whileHover={{ scale: 1.08,}}>
+                            <Image className="rounded-5 mb-5" src={"/image/makan.jpg"} width={500} height={690} alt="Gambar makanan"/>
+                        </motion.div>
+                        <motion.div whileHover={{ scale: 1.08,}}>
+                            <Image className="rounded-5" src={"/image/makan3.jpg"} width={500} height={690} alt="Gambar makanan"/>
+                        </motion.div>
                     </div>
                     <div className="col">
                         <div className={`text-center ${quicksand.className}`}>
